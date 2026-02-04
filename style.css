@@ -28,7 +28,7 @@ body {
 #obstacle {
   width: 40px;
   height: 80px;
-  background: brown;
+  background: black;
   position: absolute;
   bottom: 0;
   right: -40px;
