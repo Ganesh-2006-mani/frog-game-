@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.game {
+  width: 800px;
+  height: 300px;
+  border: 3px solid black;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#cceeff, #99dd77);
+}
+
+/* Frog */
+#frog {
+  width: 120px;
+  height: 120px;
+  background-image: url("frog.png");
+  background-size: 400% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+}
+
+/* Obstacle */
+#obstacle {
+  width: 40px;
+  height: 80px;
+  background: brown;
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  from { right: -40px; }
+  to   { right: 800px; }
+}
